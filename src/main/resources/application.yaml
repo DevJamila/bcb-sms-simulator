@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: bcb-sms-simulator
+server:
+  port: 8081    
