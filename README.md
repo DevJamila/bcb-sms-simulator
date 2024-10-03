@@ -1,5 +1,6 @@
 # bcb-sms-simulator
 This is a simple application to simulate a sms sending tool for the BCB project.
+You can test the bcb-core-app sending a message with this app up or down.
 
 ## Build and Run
 
@@ -11,15 +12,18 @@ To build the application use the maven commands:
 
 ### 2. Build docker image
 
+You can build a docker image for this app only, or build all the stack with docker-compose following the steps in [BCB-INFRA](https://github.com/DevJamila/bcb-infra) repository.
+
 Build the docker image with a tag name
 
 ` docker build -t bcb-sms-simulator `
 
 ### 3. Run with Docker
 
-Run the app container exposing the 8080 port
+Also you can run all the stack with [docker-compose](https://github.com/DevJamila/bcb-infra/blob/main/docker-compose.yaml)
+or run the app container exposing the 8081 port
 
-` docker run -d --name bcb-sms-simulator -p 8081:8080 bcb-sms-simulator `
+` docker run -d --name bcb-sms-simulator -p 8081:8081 bcb-sms-simulator `
 
 ## Make a Request
 
